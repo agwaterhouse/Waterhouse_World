@@ -1,7 +1,7 @@
 body{
 	background-image: url("img/background.png");
 	background-size: cover;
-	background-repeat: no-repeat;
+	background-repeat:repeat;
 	color: white;
 	font-family: main-font;
 
@@ -52,6 +52,9 @@ p{
 
 .flex{
 	display: flex;
+}
+
+.row{
 	flex-direction: row;
 }
 
@@ -75,12 +78,23 @@ header{
 	margin-right: 10vw;
 	font-size: 1.4em;
 	align-items: flex-end;
+	width: 100%;
+
+}
+
+.nav-links{
+	display: flex;
+	align-items: flex-end;
 }
 
 .social{
 	width: 1.7em;
+	text-decoration: none;
 }
 
+a{
+	text-decoration: none;
+}
 
 .text-body{
 	width: 40vw;
@@ -94,4 +108,51 @@ main{
 .featured-img{
 	width: 30vw;
 	margin-left: 3em;
+}
+
+
+
+@media only screen and (max-width: 1000px) {
+  
+body{
+	margin: 0;
+}
+
+
+.text-body{
+	width: 90vw;
+	margin-left: 1em;
+	font-size: 1.2rem;
+}
+
+.featured-img{
+	margin-left: 0.5em;
+	display: none;
+	overflow: hidden;
+}
+
+header{
+	margin-right: 0vw;
+	width: 100vw;
+	height: 16vw;
+	margin-bottom: 1em;
+	overflow: hidden;
+
+}
+
+.nav-links{
+	padding-right: 1.3em;
+	display: flex;
+	align-items: flex-end;
+}
+
+.padding{
+	padding: 0;
+}
+
+.social{
+padding-left: 0.8em;
+}
+
+	
 }
