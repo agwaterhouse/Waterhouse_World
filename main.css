@@ -4,6 +4,7 @@ body{
 	background-repeat:repeat;
 	color: white;
 	font-family: main-font;
+	background-color: black;
 
 	 }
 
@@ -83,6 +84,7 @@ header{
 }
 
 .nav-links{
+	padding-right: 1.3em;
 	display: flex;
 	align-items: flex-end;
 }
