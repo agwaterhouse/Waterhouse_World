@@ -11,7 +11,7 @@ body{
 canvas{
 	display: flex;
 	float: right;
-	margin-right: 5em;}
+	padding-right: 5em;}
 
 h1, h2{
 	margin: 0;
@@ -172,7 +172,7 @@ padding-left: 0.8em;
 
 canvas{
 	float: none;
-	
+
 }
 	
 }
