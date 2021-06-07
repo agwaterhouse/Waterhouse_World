@@ -8,6 +8,13 @@ body{
 
 	 }
 
+canvas{
+	display: flex;
+	float: right;
+	width: 0;
+	height: 0;
+	}
+
 h1, h2{
 	margin: 0;
 }
@@ -77,6 +84,9 @@ p{
 	padding: 1em;
 }
 
+.p-bottom1{
+	padding-bottom: 3em;
+}
 
 header{
 	height: 15vh;
@@ -115,6 +125,8 @@ main{
 	width: 30vw;
 	margin-left: 3em;
 }
+
+
 
 
 
@@ -160,5 +172,9 @@ header{
 padding-left: 0.8em;
 }
 
+canvas{
+	float: none;
+
+}
 	
 }
