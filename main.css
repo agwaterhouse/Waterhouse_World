@@ -173,8 +173,8 @@ padding-left: 0.8em;
 }
 
 canvas{
-	float: none;
+opacity: 0.3;
+float: right;
 
-}
 	
 }
