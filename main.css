@@ -63,7 +63,7 @@ p{
 
 .link:hover{
 	text-decoration: none;
-	color: purple;
+	color: #6306D6;
 }
 
 
@@ -114,8 +114,7 @@ header{
 }
 
 .social:hover{
-	width: 1.8em;
-}
+opacity: 0.8;}
 
 
 
@@ -184,8 +183,8 @@ padding-left: 0.8em;
 }
 
 canvas{
-	float: none;
+opacity: 0.3;
+float: right;
 
-}
 	
 }
