@@ -61,6 +61,11 @@ p{
 	text-decoration: underline;
 }
 
+.link:hover{
+	text-decoration: none;
+	color: purple;
+}
+
 
 .flex{
 	display: flex;
@@ -107,6 +112,12 @@ header{
 	width: 1.7em;
 	text-decoration: none;
 }
+
+.social:hover{
+	width: 1.8em;
+}
+
+
 
 a{
 	text-decoration: none;
