@@ -61,10 +61,16 @@ p{
 	text-decoration: underline;
 }
 
-.link:hover{
+.link-pur:hover{
 	text-decoration: none;
 	color: #6306D6;
 }
+
+.link-ora:hover{
+	text-decoration: none;
+	color: #ff360d;
+}
+
 
 
 .flex{

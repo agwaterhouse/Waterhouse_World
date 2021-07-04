@@ -18,12 +18,18 @@
 <meta property="og:description" content="I'm Adam... a creative guy from Yorkshire and I do stuff.">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="en">
+<meta property="og:image" content="https://waterhouses.world/img/twitter-card.jpg">
+
+
+
 
 
 
 
 <meta name="twitter:site" content="@AdamWaterhous10">
 <meta name="twitter:creator" content="@AdamWaterhous10">
+<meta name="twitter:card" content="https://waterhouses.world/img/twitter-card.jpg">
+
 
 
 
@@ -38,11 +44,10 @@
 	<script src="three.js-master/build/three.min.js"></script>
 
 
-	<link rel="icon" type="image/png" href="img/moon-fav.png">
+	<link rel="icon" type="image/png" href="img/favicon.png">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<link rel="preload" as="image" href="img/background.jpeg">
 
 
 
@@ -128,6 +133,13 @@ function purple() {
 }
 
 
+function orange() {
+	material.setColor(0xff360d)
+	console.log("color changed")
+}
+
+
+
 function hello() {
 	console.log("Hello hover")
     document.getElementById("demo").innerHTML = "Say Hi 🤙";
@@ -156,15 +168,15 @@ function unhello() {
 
 <div class="main-intro">
 <p>I’m a <span class="second-colour">creative guy</span> from Yorkshire
-and I do stuff. My day job is
+and I get stuff done. My day job is
 <span class="second-colour">Head of Operations</span> at <a onmouseover="purple()" onmouseleave="normal()" class="second-colour underline link" target="blank" href="https://uxsequence.io/">Sequence</a>, (probably) the worlds first 🌍 ... </p>
 <p>Blockchain Design Agency 🎨</p>
 
 
 
-<p>I love delivering <span class="second-colour">impactful Technical SEO</span>
-to clients, but I also juggle a range of
-other things I think are cool🔥</p>
+<p>I love delivering impactful <span class="second-colour">Technical SEO</span>
+to clients at <a onmouseover="orange()" onmouseleave="normal()" target="blank" class="second-colour underline link-ora" href="https://www.supremo.co.uk/">Supremo</a>, but I also juggle a range of
+other things I think are cool 🔥</p>
 </div>
 
 </div>
