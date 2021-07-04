@@ -8,6 +8,14 @@ body{
 
 	 }
 
+
+	 .my-work{
+	 	background-color: black;
+	 	margin-top: 10em;
+	 	width: 60vw;
+
+	 }
+
 canvas{
 	display: flex;
 	float: right;
