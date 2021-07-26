@@ -145,10 +145,48 @@ main{
 	align-items: center;
 }
 
-.featured-img{
-	width: 30vw;
-	margin-left: 3em;
+
+
+
+
+
+.sidebar-left{
+	width: 35vw;
+	margin-right: 5em;
+	margin-top: 6em;
+
 }
+
+
+.featured-image{
+	width: 35vw;
+}
+
+
+
+
+main.article {
+display: flex;
+align-items: flex-start;
+}
+
+
+.main-article{
+	max-width: 65vw;
+	margin-right: 6em;
+	margin-top: 5em;
+}
+
+.main-article img{
+	max-width: 100%;
+}
+
+
+.article-link{
+	display: flex;
+	align-items: center;
+}
+
 
 
 
