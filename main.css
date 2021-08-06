@@ -1,11 +1,10 @@
-body{
+.home{
 	background-image: url("img/background.jpeg");
 	background-size: cover;
 	background-repeat:repeat;
 	color: white;
 	font-family: main-font;
 	background-color: black;
-
 	 }
 
 
@@ -61,6 +60,10 @@ p{
 	font-family: heading-font;
 }
 
+.white{
+	color: white;
+}
+
 .second-colour{
 	color: #ffe30c;
 }
@@ -107,6 +110,11 @@ p{
 	padding-bottom: 3em;
 }
 
+
+.left-2{
+	margin-left: 2em;
+}
+
 header{
 	height: 15vh;
 	margin-right: 10vw;
@@ -146,15 +154,35 @@ main{
 }
 
 
+body .article a,h1,h2{
+	color: #ffe30c;
+}
+
+body .article h2{
+	margin-top: 3em;
+}
 
 
+.article-body{
+	background-image: url("img/new-background.jpg");
+	background-size: cover;
+	background-repeat:repeat;
+	color: white;
+	font-family: main-font;
+	background-color: black;
+}
 
 
 .sidebar-left{
 	width: 35vw;
 	margin-right: 5em;
 	margin-top: 6em;
+}
 
+.sidebar-icons{
+	width: 50px;
+	margin-right: 1em;
+	margin-left: 2em;
 }
 
 
@@ -185,6 +213,9 @@ align-items: flex-start;
 .article-link{
 	display: flex;
 	align-items: center;
+	font-size: 1.3em;
+	margin-bottom: 2em;
+	margin-right: 1em;
 }
 
 
@@ -224,6 +255,12 @@ header{
 	padding-right: 1.3em;
 	display: flex;
 	align-items: flex-end;
+	font-size: 0.8em;
+}
+
+
+.nav-links a{
+	padding: 0.5em;
 }
 
 .padding{
@@ -237,6 +274,24 @@ padding-left: 0.8em;
 canvas{
 opacity: 0.3;
 float: right;
-
+}
 	
+}
+
+
+
+@media only screen and (max-width: 1000px) {
+
+main.article{
+	flex-direction: column;
+}
+
+.featured-image{
+	width: 100vw;
+}
+
+
+
+
+
 }
