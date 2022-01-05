@@ -111,6 +111,8 @@ p{
 }
 
 
+
+
 .left-2{
 	margin-left: 2em;
 }
@@ -128,6 +130,10 @@ header{
 	padding-right: 1.3em;
 	display: flex;
 	align-items: flex-end;
+}
+
+.nav-links a:hover{
+	color: slateblue;
 }
 
 .social{
@@ -176,7 +182,7 @@ body .article h2{
 .sidebar-left{
 	width: 35vw;
 	margin-right: 5em;
-	margin-top: 6em;
+	margin-top: 9.5em;
 }
 
 .sidebar-icons{
@@ -218,9 +224,73 @@ align-items: flex-start;
 	margin-right: 1em;
 }
 
+.article-link a:hover{
+	color:slateblue;
+}
+
+
+main.archieve{
+	margin-left: 10em;
+}
+
+main.archieve p{
+	font-size: 1em;
+}
 
 
 
+
+.blog-item{
+	display: flex;
+	align-items: center;
+	margin-bottom: 5em;
+}
+
+.blog-text{
+	flex-direction: column;
+	width: 40vw;
+}
+
+.blog-heading{
+	display: flex;
+	align-items: flex-start;
+}
+
+
+
+.blog-icon{
+	width: 3.5em;
+	margin-left: 0.5em;
+}
+
+.date{
+	font-size:0.7em;
+	color: white;
+	margin-top: 10px;
+	color: slateblue;
+}
+
+.intro-blog{
+	margin-top: 0.5em;
+}
+
+.temp{
+	margin-bottom: 2em;
+}
+
+
+.blog-heading h2:hover{
+	color: slateblue;
+
+}
+
+
+
+.hover-image{
+	width: 20vw;
+	margin-left: 7rem;
+
+}
 
 
 @media only screen and (max-width: 1000px) {
@@ -255,7 +325,7 @@ header{
 	padding-right: 1.3em;
 	display: flex;
 	align-items: flex-end;
-	font-size: 0.8em;
+	font-size: 0.9em;
 }
 
 
@@ -275,23 +345,73 @@ canvas{
 opacity: 0.3;
 float: right;
 }
+
+
+main.article{
+	flex-direction: column;
+	max-width: none;
+}
+
+.main-article{
+	margin-right: 2em;
+	max-width: none;
+		margin-left: 2em;
+		margin-top: 0;
+
+}
+
+.featured-image{
+	width: 95vw;
+}
+
+
+.sidebar-links{
+	display: none;
+}
+
+
 	
 }
 
 
+@media only screen and (max-width: 800px) {
 
-@media only screen and (max-width: 1000px) {
 
-main.article{
-	flex-direction: column;
+
+main.archieve{
+	margin-left: 3em;
 }
 
-.featured-image{
+.blog-text{
 	width: 100vw;
 }
 
 
 
+.hover-image{
+	display: none;
+}
 
+
+}
+
+
+
+
+
+@media only screen and (max-width: 500px) {
+
+	.nav-links{
+		
+		font-size: 0.7em;
+	}
+
+	.main-article{
+		margin-left: 1em;
+	}
+
+	.blog-icon{
+		width: 3em;
+	}
 
 }

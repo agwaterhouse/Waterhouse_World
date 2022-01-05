@@ -1,0 +1,226 @@
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+	<title>My Work | Adam Waterhouse</title>
+	<meta name="description" content="I'm Adam... a creative guy from Yorkshire and I do stuff.">
+
+<link rel="canonical" href="https://waterhouses.world/">
+<meta property="og:url" content="https://waterhouses.world/">
+
+
+
+
+
+<meta property="og:site_name" content="Waterhouse's World">
+<meta property="og:title" content="Adam Waterhouse">
+<meta property="og:description" content="I'm Adam... a creative guy from Yorkshire and I do stuff.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en">
+<meta property="og:image" content="https://waterhouses.world/img/twitter-card.jpg">
+
+
+
+
+
+
+
+<meta name="twitter:site" content="@AdamWaterhous10">
+<meta name="twitter:creator" content="@AdamWaterhous10">
+<meta name="twitter:card" content="https://waterhouses.world/img/twitter-card.jpg">
+
+
+
+
+
+
+
+
+	<link rel="stylesheet" type="text/css" href="../main.css">
+
+	<link rel="stylesheet" type="text/css" href="../normalize.css">
+
+
+	<link rel="icon" type="image/png" href="../img/favicon.png">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+
+</head>
+
+
+<body class="article-body">
+
+
+<header class="flex flex-end">
+	<div class="nav-links">
+
+
+	<a class="second-colour padding" href="../index.html">Home</a>
+
+
+	<a class="second-colour padding" href="../blog.html">Blog</a>
+
+	<a onmouseover="hello()" onmouseleave="unhello()" id="demo" class="second-colour padding fixed hi" href="mailto:agwaterhouse@gmail.com" target="blank">Say Hi 👋</a>
+
+
+<a href="https://www.linkedin.com/in/adam-waterhouse-2a113224">
+	<img class="padding social" src="../img/linkedin.png">
+</a>
+
+
+<a href="https://twitter.com/AdamWaterhous10">
+	<img class="padding social" src="../img/twitter.png">
+</a>
+</div>
+
+</header>
+
+<main class="article">
+
+
+<div class="sidebar-left">
+
+
+<img class="featured-image" src="../img/netlify.png">
+
+<div class="sidebar-links">
+
+<h3 class="left-2">Read More</h3>
+
+
+<div class="article-link">
+<img class="sidebar-icons" src="../img/supremo.png">
+<a href="#">12 Months at Supremo...</a>
+</div>
+
+
+<div class="article-link">
+<img class="sidebar-icons" src="../img/bitcoin.png">
+<a href="#">What is the Blockchain World?</a>
+</div>
+
+
+<div class="article-link">
+<img class="sidebar-icons" src="../img/Google.png">
+<a href="#">How I stumbled accross the world of SEO without seeing it coming...</a>
+</div>
+</div>
+
+
+
+</div>
+
+<div class="main-article">
+
+<h2 class="white">Blog</h2>
+
+<h1>Changing MetaData using Google Tag Manager.
+</h1>
+
+<p>Ever had one of those sites where the development setup makes it almost impossible to change meta data such as page titles and meta descriptions?
+</p>
+
+<p>When you’ve exhausted other options you can actually use Google Tag Manager to change the data on any page through the use of injected JavaScript.
+</p>
+
+<p>It’s worth noting that you using Google Tag Manager in this way isn’t Googles preferred way of alternating meta data, wherever possible you should do this directly in the code. Making changes in this way will work, but changes can take unto a few weeks to come into effect, this is because Google will need to render the page/execute the JavaScript before it sees the new meta data.
+</p>
+
+<p>If your site uses a framework such as Vue or React then this can add an extra layer of complexity, as the JS loads on initial load rather than on page changes.
+</p>
+
+<p>In this article I’ll explain how you can use Tag Manager to change title tags and other meta data on your site, including what to do when you encounter pesky frameworks!
+</p>
+
+<p>Let’s get into it!
+</p>
+
+
+<h2>1. Write the basic script that changes the meta data
+</h2>
+
+<p>The first thing you need to do is write some basic JavaScript which finds the current Meta Data and changes it.
+</p>
+
+<p>You can adapt this code so that it changes the meta data you need to control on the page.
+</p>
+
+<p>This code needs to include 2 things:
+</p>
+
+<ul>
+	<li>The HTML element you want to target</li>
+	<li>The data you want it to be changed too</li>
+
+</ul>
+
+<p>The below is an example of how you’d go about changing a Title tag on a given page.
+</p>
+
+<p>Code</p>
+
+<p>You can also adapt the code to change other things such as Meta Descriptions.
+</p>
+
+<p>Code</p>
+
+<p>It’s worth noting that this approach won’t work for all meta data such as Twitter cards, and Open Graph (OG) data. This is because this data is displayed to the user before any JavaScript is executed. 
+</p>
+
+
+<img src="../img/ocean-error-message.png">
+
+<h2>2. Create a custom HTML tag for this script within Google Tag Manager.</h2>
+
+<p>The next step is to create a tag for each page we’d like to use this tag on to change the meta data. This is so we can adapt the meta data based on the page that the user is on.</p>
+
+<p>For larger sites we can adapt the JavaScript so that the Title tag is selected automatically based on other HTML elements such as the H1 attribute which is set on that page.</p>
+
+<p>It’s important to give your tags relevant names here, this is so we can easily test the tags later on in the process.</p>
+
+
+
+
+<h2>3. Create a Trigger so the title changes based on a page change</h2>
+
+<p>Think about when you want to Trigger your changes.</p>
+
+<p>For larger sites you may wish to add the same meta data to several pages, you can do this using triggers. For example we might have a shopping cart page with thousands of query parameters</p>
+
+<p>An example of this could be you wanting to add the same meta description to all blog listing pages that use pagination.</p>
+
+<p>Here we can use the page URL starts with trigger to target all of these pages at the same time.
+</p>
+
+<p>One issue you might have here is with sites built on JavaScript frameworks such as React or Vue where the JavaScript is loaded in one initial site load rather than on each individual page.</p>
+
+<p>This can mean your tags don’t load in one each page and can lead to meta data sticking from page to page.</p>
+
+<img src="../img/ocean-error-message.png">
+
+<h2>4. Changing metadata using Tag Manager on Vue, Nuxt and other JavaScript Frameworks </h2>
+
+<p>JavaScript frameworks and SPA (Single Page Applications) can add an extra level of complexity because of the way that page changes work.</p>
+
+<p>As a result of this, Page Url triggers can sometimes play up and lead to meta data not being changed and consequently meta data not changing.</p>
+
+<p>We can fix this by using the History Change Trigger. This allows us to check for any changes in URL fragments and will allow our tags to trigger.</p>
+
+<p>One thing to consider here though is that this meta data will stick from page to page unless you specify the meta data of the page.</p>
+
+
+
+
+</div>
+
+
+</main>
+
+</body>
+
+
+</html>
