@@ -20,6 +20,7 @@ canvas{
 	float: right;
 	width: 0;
 	height: 0;
+	opacity: unset;
 	}
 
 h1, h2{
@@ -112,6 +113,19 @@ p{
 
 
 
+.bottom{
+	position: absolute;
+	bottom: -150;
+}
+
+.container{
+	visibility: hidden;
+}
+
+.spacer {
+  visibility: visible;
+}
+
 
 .left-2{
 	margin-left: 2em;
@@ -166,6 +180,13 @@ body .article a,h1,h2{
 
 body .article h2{
 	margin-top: 3em;
+}
+
+
+.about-image{
+	margin-left: 20vw;
+	opacity: 0;
+	width: 20vw;
 }
 
 
